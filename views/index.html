@@ -6,42 +6,26 @@
         body { padding-top: 70px; }
     </head>
     <body>
-        <!--<script type="text/javascript">
-            function changeClass() {
-                
-            }
-            
-            window.onload = function() {
-                document.getElementById("nav-tm").addEventListener('click', changeClass);
-                document.getElementById("nav-bdc").addEventListener('click', changeClass);
-                document.getElementById("nav-scs").addEventListener('click', changeClass);
-                document.getElementById("nav-pb").addEventListener('click', changeClass);
-            }
-            
-        </script>-->
         <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#team-name">J-Cubed</a>
+            <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#team-name">J-Cubed</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li onclick="changeClass()" class="" id="nav-tm"><a href="#members"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Team Members</a></li>
+                    <li onclick="changeClass()" class="" id="nav-bdc"><a href="#burn-down-chart"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Burn Down Chart</a></li>
+                    <li onclick="changeClass()" class="" id="nav-scs"><a href="#sprint-completed-stories"><span class="glyphicon glyphicon-ok-circle"></span> Sprint Completed Stories</a></li>
+                    <li onclick="changeClass()" class="" id="nav-pb"><a href="#product-backlog"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Product Backlog</a></li>
+                  </ul>
+                </div>
             </div>
-        
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav">
-                <li onclick="changeClass()" class="" id="nav-tm"><a href="#members"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Team Members</a></li>
-                <li onclick="changeClass()" class="" id="nav-bdc"><a href="#burn-down-chart"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Burn Down Chart</a></li>
-                <li onclick="changeClass()" class="" id="nav-scs"><a href="#sprint-completed-stories"><span class="glyphicon glyphicon-ok-circle"></span> Sprint Completed Stories</a></li>
-                <li onclick="changeClass()" class="" id="nav-pb"><a href="#product-backlog"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Product Backlog</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
         </nav>
         <div class="page-header" id="team-name">
             <h1>J-Cubed</h1>
@@ -72,13 +56,36 @@
         <div class="panel panel-default" id="sprint-completed-stories">
             <div class="panel-heading"><span class="glyphicon glyphicon-ok-circle"></span> Sprint Completed Stories</div>
             <div class="panel-body">
-                <p>Sprint Completed Stories will be placed here.</p>
+                <p>The following stories have been completed as of Sprint 1:</p>
+                <ul>
+                    <li>Site looks pretty with Bootstrap CSS</li>
+                    <li>Site looks awesome with <code>header</code> and <code>footer</code>elements</li>
+                    <li>Site is easily navigable with a link to the about page and the homepage in the <code>footer</code> element of the page</li>
+                    <li>Added a team logo to the homepage, which is found at <code>/</code></li>
+                    <li>Homepage displays an unordered list of events, including their details (with) </li>
+                    <li>Events that are over are hidden</li>
+                    <li>Events are linked to event detail page (currently unpopulated)</li>
+                    <li>Created an API link to retrieve an object with key events containing all events in JSON format</li>
+                    <li>Events can be searched by submitting a GET request</li>
+                    <li>Events can be created at <code>/events/new</code>(form is shown, but cannot be submitted or validated)</li>
+                </ul>
+                <p>We started relatively early with the project. We had our first sprint planning on Thursday, January 29. During this meeting, we went through each and every user story, elaborated on the work that needed to be done, agreed on a definition of done, assigned "difficulty levels"/story points for each, and then split the work among ourselves. At the same meeting, we set down our schedules for (virtual) daily standup meetings, a retrospective, and a sprint demo.</p>
+                <p>From the list above, you'll probably notice that we have finished quite a good amount of work during this sprint, and this is due to our (mis)understanding of the project instructions. When we saw <code>S1-A</code> to <code>S1-F</code> in the project site, we assumed that all those user stories were due for Sprint 1. It was only much later when we asked the TAs and realized that videos to complete some of the user stories have not yet been posted that we were in fact moving way faster than was needed.</p>
+                <p>We struggled a lot with merging branches, and that hampered us from moving forward with the project. All of us are fairly new with Git (and even programming in general), so the learning curve was to be expected.</p>
             </div>
         </div>
         <div class="panel panel-default" id="product-backlog">
             <div class="panel-heading"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Product Backlog</div>
             <div class="panel-body">
-                <p>Product Backlog will be placed here.</p>
+                <p>The following stories are scheduled either for merging into the master branch or for development by Sprint 2:</p>
+                <ul>
+                    <li>Merge the About Us branch</li>
+                    <li>Enable RSVPing</li>
+                    <li>Event creation form should have a submit button</li>
+                    <li>Site must be able to validate users inputs and show errors as needed</li>
+                    <li>Make site more aesthetically pleasing</li>
+                </ul>
+                <p>Some tasks may require further elaboration/detailing in the next sprint planning.</p>
             </div>
         </div>
     </body>
