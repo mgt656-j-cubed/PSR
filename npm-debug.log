@@ -6,10 +6,11 @@
 3 info using node@v0.10.35
 4 error Error: Problems were encountered
 4 error Please correct and try again.
-4 error extraneous: strftime@0.8.2 /home/ubuntu/workspace/node_modules/strftime
-4 error extraneous: morgan@1.5.1 /home/ubuntu/workspace/node_modules/morgan
-4 error extraneous: nunjucks@1.1.0 /home/ubuntu/workspace/node_modules/nunjucks
-4 error extraneous: body-parser@1.11.0 /home/ubuntu/workspace/node_modules/body-parser
+4 error missing: body-parser@^1.8.4, required by workspace@0.0.0
+4 error missing: morgan@^1.3.2, required by workspace@0.0.0
+4 error missing: nunjucks@^1.1.0, required by workspace@0.0.0
+4 error missing: strftime@^0.8.2, required by workspace@0.0.0
+4 error missing: validator@^3.19.1, required by workspace@0.0.0
 4 error     at shrinkwrap_ (/home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/shrinkwrap.js:30:15)
 4 error     at /home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/shrinkwrap.js:24:5
 4 error     at /home/ubuntu/.nvm/v0.10.35/lib/node_modules/npm/lib/ls.js:45:30
