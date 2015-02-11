@@ -31,7 +31,7 @@
         <div class="page-header" id="team-name">
             <h1>J-Cubed</h1>
             <h4>Project Status Report</h4>
-            <p>February 3, 2015</p>
+            <p>February 11, 2015</p>
         </div>
         <div class="panel panel-default" id="members">
             <div class="panel-heading"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Team Members</div>
@@ -50,7 +50,7 @@
         <div class="panel panel-default" id="burn-down-chart">
             <div class="panel-heading"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Burn Down Chart</div>
             <div class="panel-body">
-                <img src="http://s18.postimg.org/ctyurm0w9/burn_down_chart_sprint_1.png"/>
+                <img src="http://s9.postimg.org/fcjcarbdb/burn_down_chart_sprint_2.png"/>
                 <p>"Unburned" user stories/points in the chart reflect work that has not been merged due to problems in merging/using GIT.</p>
             </div>
         </div>
@@ -59,31 +59,27 @@
             <div class="panel-body">
                 <p>The following stories have been completed as of Sprint 1:</p>
                 <ul>
-                    <li>Site looks pretty with Bootstrap CSS</li>
-                    <li>Site looks awesome with <code>header</code> and <code>footer</code>elements</li>
-                    <li>Site is easily navigable with a link to the about page and the homepage in the <code>footer</code> element of the page</li>
-                    <li>Added a team logo to the homepage, which is found at <code>/</code></li>
-                    <li>Homepage displays an unordered list of events, including their details (with) </li>
-                    <li>Events that are over are hidden</li>
-                    <li>Events are linked to event detail page (currently unpopulated)</li>
-                    <li>Created an API link to retrieve an object with key events containing all events in JSON format</li>
-                    <li>Events can be searched by submitting a GET request</li>
-                    <li>Events can be created at <code>/events/new</code>(form is shown, but cannot be submitted or validated)</li>
+                    <li>About US page created (but not yet pushed to production)</li>
+                    <li>Event detail page exists for each event (but not yet passing test)</li>
+                    <li>Event title, image, location, date and time, and attendees to event detail page exist (but also not passing test)</li>
+                    <li>User can submit their email for RSVP (but no validation yet)</li>
+                    <li>Event creation validation now exists and passes all tests</li>
                 </ul>
-                <p>We started relatively early with the project. We had our first sprint planning on Thursday, January 29. During this meeting, we went through each and every user story, elaborated on the work that needed to be done, agreed on a definition of done, assigned "difficulty levels"/story points for each, and then split the work among ourselves. At the same meeting, we set down our schedules for (virtual) daily standup meetings, a retrospective, and a sprint demo.</p>
-                <p>From the list above, you'll probably notice that we have finished quite a good amount of work during this sprint, and this is due to our (mis)understanding of the project instructions. When we saw <code>S1-A</code> to <code>S1-F</code> in the project site, we assumed that all those user stories were due for Sprint 1. It was only much later when we asked the TAs and realized that videos to complete some of the user stories have not yet been posted that we were in fact moving way faster than was needed.</p>
-                <p>We struggled a lot with merging branches, and that hampered us from moving forward with the project. All of us are fairly new with Git (and even programming in general), so the learning curve was to be expected.</p>
+                <p>Most (if not all) of the project headstart that we had gained during the previous week are gone, as we used most of the time this week to squash bugs.</p>
+                <p>We faltered in daily scrums. This is definitely a practice that we need to check ourselves with, especially since a lot of coordination is necessary now more than ever at this stage of the project.</p>
+                <p>Team has not yet gotten its head around the project curveball. This will definitely require a lot of planning and working out of details (apart from the actual coding).</p>
             </div>
         </div>
         <div class="panel panel-default" id="product-backlog">
             <div class="panel-heading"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Product Backlog</div>
             <div class="panel-body">
-                <p>The following stories are scheduled either for merging into the master branch or for development by Sprint 2:</p>
+                <p>The following stories are scheduled either for merging into the master branch or for development by Sprint 3:</p>
                 <ul>
-                    <li>Merge the About Us branch</li>
-                    <li>Enable RSVPing</li>
-                    <li>Event creation form should have a submit button</li>
-                    <li>Site must be able to validate users inputs and show errors as needed</li>
+                    <li>FIX: Code to pass event detail page test #1</li>
+                    <li>Allow Yale users to RSVP</li>
+                    <li>Reject non-Yale RSVP</li>
+                    <li>Submitting a new event successfully takes user to event detail page</li>
+                    <li>Address class project curveballs</li>
                     <li>Make site more aesthetically pleasing</li>
                 </ul>
                 <p>Some tasks may require further elaboration/detailing in the next sprint planning.</p>
