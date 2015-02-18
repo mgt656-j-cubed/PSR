@@ -24,6 +24,8 @@
                     <li onclick="changeClass()" class="" id="nav-bdc"><a href="#burn-down-chart"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Burn Down Chart</a></li>
                     <li onclick="changeClass()" class="" id="nav-scs"><a href="#sprint-completed-stories"><span class="glyphicon glyphicon-ok-circle"></span> Sprint Completed Stories</a></li>
                     <li onclick="changeClass()" class="" id="nav-pb"><a href="#product-backlog"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Product Backlog</a></li>
+                    <li onclick="changeClass()" class="" id="nav-pb"><a href="#project-retrospective"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Project Retrospective</a></li>
+                    <li onclick="changeClass()" class="" id="nav-pb"><a href="#traffic-analysis"><span class="glyphicon glyphicon-scale" aria-hidden="true"></span> Traffic Analysis</a></li>
                   </ul>
                 </div>
             </div>
@@ -31,7 +33,7 @@
         <div class="page-header" id="team-name">
             <h1>J-Cubed</h1>
             <h4>Project Status Report</h4>
-            <p>February 11, 2015</p>
+            <p>February 18, 2015</p>
         </div>
         <div class="panel panel-default" id="members">
             <div class="panel-heading"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Team Members</div>
@@ -50,39 +52,60 @@
         <div class="panel panel-default" id="burn-down-chart">
             <div class="panel-heading"><span class="glyphicon glyphicon-fire" aria-hidden="true"></span> Burn Down Chart</div>
             <div class="panel-body">
-                <img src="http://s9.postimg.org/fcjcarbdb/burn_down_chart_sprint_2.png"/>
-                <p>"Unburned" user stories/points in the chart reflect work that has not been merged due to problems in merging/using GIT.</p>
+                <img src="http://s17.postimg.org/3pudfz61r/burn_down_chart_sprint_3.png"/>
+                <p>All story points (and corresponding stories) burned down!</p>
             </div>
         </div>
         <div class="panel panel-default" id="sprint-completed-stories">
             <div class="panel-heading"><span class="glyphicon glyphicon-ok-circle"></span> Sprint Completed Stories</div>
             <div class="panel-body">
-                <p>The following stories have been completed as of Sprint 1:</p>
+                <p>The following stories have been completed since last sprint:</p>
                 <ul>
-                    <li>About US page created (but not yet pushed to production)</li>
-                    <li>Event detail page exists for each event (but not yet passing test)</li>
-                    <li>Event title, image, location, date and time, and attendees to event detail page exist (but also not passing test)</li>
-                    <li>User can submit their email for RSVP (but no validation yet)</li>
-                    <li>Event creation validation now exists and passes all tests</li>
+                    <li>Users can now view the About page</li>
+                    <li>Users can now see details of events in their own pages</li>
+                    <li>Users can see event title, image, location, date and time, and attendees</li>
+                    <li>Users can submit their email for RSVP and sites validates if it's a Yale address or not</li>
+                    <li>Admin can track user flow through Google Analytics</li>
+                    <li>RSVP experiment set-up</li>
+                    <li>Donate/Support experiment set-up</li>
                 </ul>
-                <p>Most (if not all) of the project headstart that we had gained during the previous week are gone, as we used most of the time this week to squash bugs.</p>
-                <p>We faltered in daily scrums. This is definitely a practice that we need to check ourselves with, especially since a lot of coordination is necessary now more than ever at this stage of the project.</p>
-                <p>Team has not yet gotten its head around the project curveball. This will definitely require a lot of planning and working out of details (apart from the actual coding).</p>
+                <p>We had a hard time figuring out the Google Analytics portion of the project despite our initial belief that it was going to be easy. Finally got it to work after having seen instructors do it in class.</p>
+                <p>That said, we are hesitant to make conclusions based on our experiments given the short time that they have been running.</p>
+                <p>Our initial plans to devote the last sprint to making the site more aesthetically pleasing had to be put on the back burner, which is unfortunate because it was the part of the project that we were most excited about.</p>
             </div>
         </div>
         <div class="panel panel-default" id="product-backlog">
             <div class="panel-heading"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Product Backlog</div>
             <div class="panel-body">
-                <p>The following stories are scheduled either for merging into the master branch or for development by Sprint 3:</p>
+                <p>The following stories are scheduled for development in the future:</p>
                 <ul>
-                    <li>FIX: Code to pass event detail page test #1</li>
-                    <li>Allow Yale users to RSVP</li>
-                    <li>Reject non-Yale RSVP</li>
-                    <li>Submitting a new event successfully takes user to event detail page</li>
-                    <li>Address class project curveballs</li>
-                    <li>Make site more aesthetically pleasing</li>
+                    <li>Continue run of existing experiments to gather more data on RSVP and Donate/Support variants</li>
+                    <li>Implement experiments variants that lead to higher conversion</li>
                 </ul>
-                <p>Some tasks may require further elaboration/detailing in the next sprint planning.</p>
+                <p>All of these things are dependent on whether the simulated traffic will keep running while the site is up. We will probably also try and crack the CSS challenge and find inspiration from some of the work that we have seen in class.</p>
+            </div>
+        </div>
+        <div class="panel panel-default" id="project-retrospective">
+            <div class="panel-heading"><span class="glyphicon glyphicon-apple" aria-hidden="true"></span> Project Retrospective</div>
+            <div class="panel-body">
+                <p>The project has been a great learning experience and these are some of the things we learned:</p>
+                <ul>
+                    <li>Constant communication is key.</li>
+                    <li>As we have learned in class, building the capabilities of the team should take precedence over checking off product requirements.</li>
+                    <li>Never, ever make the mistake of saying "it's just a few lines of code" especially when you don't even have an idea of what the code would look like.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="panel panel-default" id="traffic-analysis">
+            <div class="panel-heading"><span class="glyphicon glyphicon-scale" aria-hidden="true"></span> Traffic Analysis</div>
+            <div class="panel-body">
+                <p>Based on our experiments, we have found the following to be optimal for user conversion:</p>
+                <ul>
+                    <li>Having RSVP in the events list increases (slightly) the number of pageviews. Having RSVP increased pageviews by 1% versus original.</li>
+                    <li>The word Donate works better than Support in converting users from viewers to donors/supporters. Support variant led to 37% lower conversion versus Donate variant.</li>
+                </ul>
+                <p>The results of the RSVP experiment can be viewed here: <a href="http://screencast.com/t/KHuhpVLiUd">http://screencast.com/t/KHuhpVLiUd</a></p>
+                <p>The results of the Donate/Support experiment can be viewed here: <a href="http://screencast.com/t/aoiqAkw8X3">http://screencast.com/t/aoiqAkw8X3</a></p>
             </div>
         </div>
     </body>
